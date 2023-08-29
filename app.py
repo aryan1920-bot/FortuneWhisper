@@ -19,9 +19,9 @@ def get_fortune(num):
 
 def main():
     st.title('FORTUNE WHISPER')
-    st.text('SPIN THE BALL:')
+    st.header('SUMMON YOUR CURIOSITIES !!!')
     current_year = datetime.datetime.now().year
-    if st.button(':8ball:'):
+    if st.button('ASK THE UNIVERSE :8ball:'):
         result = roll_dice()
         fortune = get_fortune(result)
         if fortune:
