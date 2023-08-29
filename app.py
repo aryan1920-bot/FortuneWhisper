@@ -34,7 +34,7 @@ def main():
             ':face_with_spiral_eyes:', 
             ':disappointed_relieved:'
         ]
-        st.markdown(emojis[result - 1])                                     
+        st.title(emojis[result - 1])                                     
     st.markdown('<div style="height: 250px;"></div>', unsafe_allow_html=True)
             
     st.markdown(
