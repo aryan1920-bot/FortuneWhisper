@@ -19,11 +19,12 @@ def get_fortune(num):
 
 def main():
     st.title('FORTUNE WHISPER :speak_no_evil:')
-    st.text('SUMMON YOUR CURIOSITIES !!! ')
     current_year = datetime.datetime.now().year
-    if st.button('ASK THE UNIVERSE :8ball:'):
+    user_question = st.text_input("SUMMON YOUR CURIOSITIES !!! ")
+    if st.button('ASK THE UNIVERSE :8ball:') or user_question :
         result = roll_dice()
         fortune = get_fortune(result)
+        
         if fortune:
             st.text(fortune)
         emojis = [
