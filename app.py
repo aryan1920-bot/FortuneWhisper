@@ -20,7 +20,7 @@ def get_fortune(num):
 def main():
     st.title('FORTUNE WHISPER :speak_no_evil:')
     current_year = datetime.datetime.now().year
-    user_question = st.text_input("SUMMON YOUR CURIOSITIES !!! ")
+    user_question = st.text_input("SUMMON YOUR CURIOSITIES !!! :sparkles:")
     if st.button('ASK THE UNIVERSE :8ball:') or user_question :
         result = roll_dice()
         fortune = get_fortune(result)
@@ -39,7 +39,7 @@ def main():
     st.markdown('<div style="height: 250px;"></div>', unsafe_allow_html=True)
             
     st.markdown(
-        f'<footer style="position: absolute; bottom: 0; width: 100%; text-align: center;">&copy; {current_year} Aryan Singla</footer>',
+        f'<footer style="position: absolute; bottom: 0; width: 100%; text-align: center;">&copy; {current_year} Aryan Singla </footer>',
         unsafe_allow_html=True
     )
 if __name__ == '__main__':
